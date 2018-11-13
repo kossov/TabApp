@@ -1,0 +1,41 @@
+.tabs-container {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.tab-links-container {
+    display: flex;
+}
+
+.tab-link {
+    cursor: pointer;
+    margin: 0 5px;
+    flex: 1 0; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.tab-link-title {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.tab-link-remove-btn {
+    flex: 0;
+}
+
+.tab-link.active {
+    background-color: rgba(0, 70, 200, 0.6);
+}
+
+.tab:not(.active) {
+    display: none;
+}

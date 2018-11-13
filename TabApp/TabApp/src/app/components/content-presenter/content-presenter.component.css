@@ -1,0 +1,32 @@
+.main {
+    padding: 10px;
+}
+
+.controls {
+    margin: 10px 0;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+    align-items: center;
+}
+
+.item-title-container {
+    padding: 0 20px;
+}
+
+.item-image-container {
+    padding: 10px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: minmax(320px, 1fr) minmax(500px, 5fr);
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}

@@ -1,0 +1,12 @@
+<div *ngIf="tabs$" class="tabs-container">
+    <div class="tab-links-container">
+        <div *ngFor="let tab of tabs$ | async" class="tab-link" [ngClass]="{'active': (selectedTabId$ | async) === tab.id}"
+            (click)="onTabChange(tab)">
+            <span class="tab-link-title">{{tab.title}}</span>
+            <span class="tab-link-remove-btn">
+                <button class="btn btn-dark" (click)="onRemoveTab(tab.id)">X</button>
+            </span>
+        </div>
+        <button class="btn btn-outline-dark" (click)="onCreateTab()">+</button>
+    </div>
+</div>

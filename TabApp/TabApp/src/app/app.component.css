@@ -1,0 +1,4 @@
+.main {
+    display: grid;
+    grid-template-rows: minmax(30px, 1fr);
+}
